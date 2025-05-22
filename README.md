@@ -32,6 +32,13 @@ SKIP_TEST=1 ./third_party/libjxl/ci.sh opt
 ```
 which should provide `./third_party/libjxl/build/tools/djxl`.
 
+### jxl-rs
+```bash
+cd third_party/jxl-rs/
+cargo build --release --bin jxl_cli
+```
+which should provide `./third_party/jxl-rs/target/release/jxl_cli`.
+
 #### jxl-oxide
 Make sure you have an up-to-date rust version, e.g. by running
 ```bash
