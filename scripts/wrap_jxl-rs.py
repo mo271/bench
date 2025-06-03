@@ -15,7 +15,6 @@ def write_metadata(args):
 def write_orig_icc(args):
     return
 
-
 def write_reconstruct_jpg(args):
     with open(args.output, 'w') as f:
         pass
