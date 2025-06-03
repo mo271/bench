@@ -55,8 +55,6 @@ def main():
         return
 
     subprocess.run(shlex.split(args.decoder_format % (args.input, args.output, args.icc_out)), check=True)
-    # needed util we always write an icc
-    subprocess.run(['cp', 'dummy.icc', args.icc_out], check=True)
     write_metadata(args)
     write_orig_icc(args)
 
